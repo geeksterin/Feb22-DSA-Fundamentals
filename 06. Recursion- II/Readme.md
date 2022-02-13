@@ -1,11 +1,18 @@
-##                       Recursion - II
-----------------------------------------------------------------
-1. [x] Find pow(a,b) using recursion.
-2. Check palindrome using recursion.
-3. Remove all adjacent duplicates chars from a string.
-4. Function calls with Tree diagram.
-5. Merge Sort
+###                 Recursion - II 
+---------------------------------------------------------------------------------------
+ ###    2 way-Merge Sort aka Merge Sort.
+ --------------------------------------------------------------------------------------
+    -   Why would we need a new algorithm afterall.
+    -   External merge sort.
+    -   Pros and cons
 
+### Quick Sort
+--------------------------------------------------------------------------------------
+-   Median vs Middle.
+-   Quick Sort : https://www.interviewbit.com/tutorial/quicksort-algorithm/#quicksort-algorithm  
+-   Randomly shuffle the array.=> Randomized quick sort. => O(nlgn) median of median.
+-   Pros and cons
 
-
-### Quiz on Recursion: https://www.geeksforgeeks.org/algorithms-gq/recursion-gq/
+11. Which is the inbuilt sorting algorithm used by langauges.
+-   https://www.geeksforgeeks.org/know-sorting-algorithm-set-1-sorting-weapons-used-programming-languages/
+-   https://stackabuse.com/sorting-arrays-in-javascript/
