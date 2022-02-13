@@ -1,9 +1,11 @@
-## Time and Space Complexity.
+## Time and Space Complexity in Iterative Code.
 ------------------------------------------------------------
  1. Why Time and space Analysis: 
  2. Case defination : worst, best, average eg:linear search, sorting 
  3. Why asymtotic notation required and their terms.
-    - 	a. upper bound, lower bound, tight bound 
+    - 	Upper bound => big O 
+	-	Lower bound => big Omega
+	-	tight bound => Theta 
 
 --------------------------------------------------------------------------------------
 	void m1(){
