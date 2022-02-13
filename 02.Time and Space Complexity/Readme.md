@@ -1,13 +1,18 @@
 ## Time and Space Complexity in Iterative Code.
 ------------------------------------------------------------
- 1. Why Time and space Analysis: 
- 2. Case defination : worst, best, average eg:linear search, sorting 
+ 1. Why Time and space Analysis..
+ 2. What is CASE in TC Anaylsis:
+	- worst case
+	- best case
+	- Average case
  3. Why asymtotic notation required and their terms.
     - 	Upper bound => big O 
 	-	Lower bound => big Omega
 	-	tight bound => Theta 
 
+### 	Calculating TC for iterative Code.
 --------------------------------------------------------------------------------------
+###	    Constant Time Complexity aka O(1)
 	void m1(){
 		  int a = 4;
 		  int b = 6;
@@ -15,15 +20,30 @@
 		  c = a + b;
 		  System.out.println(c);
 	}
---------------------------------------------------------------------------------------
+
 	static void m2() {
 		int a = 5, b = 10;
 		int temp = a;
 		a = b;
 		b = temp;
 	}
-    
 
+	void m2(){	
+		 for(int i=0;i<1000;i++) {
+			// some O(1) expressions
+		}
+	}
+
+	void m3(){	
+		 for(int i=0;i<1000;i++) {
+			for(int j=0;j<i;j++>){
+				// some O(1) statment.
+			}
+		}
+	}
+		
+    
+### 	Linear Time Complexity aka O(N)	
 --------------------------------------------------------------------------------------
 	int count(int arr[], int n)
 	{
@@ -34,19 +54,7 @@
 	  }
 	  return sum;
 	}
---------------------------------------------------------------------------------------
-	static int m3(int n) {	
-		int count = 0;
-		for (int i = 0; i < n; i++) {
-			for (int j = i; j > 0; j--) {
-				count = count + 1;
-			}
-			        
-		}
-		return count;
-	}
 
---------------------------------------------------------------------------------------
 	static void m4(int n) {
 		int a = 10;
 		a = a+5;
@@ -59,35 +67,83 @@
 			// some O(1) expressions
 		}
 	}
---------------------------------------------------------------------------------------
-### O(LgN):
-        for (int i = 1; i <=n; i *= c) {
-            // some O(1) expressions
-        }
 
-        for (int i = n; i > 0; i /= c) {
-            // some O(1) expressions
-        }
+### 	Quadratic Time Complexity aka O(N*N)
 --------------------------------------------------------------------------------------
+	static int m1(int n) {	
+		for (int i = 0; i <= n; i++) {
+			for (int j = 0; j <= m>; j--) {
+				count = count + 1;
+			}
+		}
+		return count;
+	}
+
+	static int m2(int n) {	
+		int count = 0;
+		for (int i = 0; i < n; i++) {
+			for (int j = i; j > 0; j--) {
+				count = count + 1;
+			}
+			        
+		}
+		return count;
+	}
+
+	var value = 0;
+	for(var i=0;i<n;i++){
+		for(var j=0;j<i;j++){
+			value += 1;
+		}
+	}
+
+### 	Linear-Arithmetic Time Complexity aka O(NlgN)
+--------------------------------------------------------------------------------------
+		int i, j, k = 0;
+		for (i = n / 2; i <= n; i++) {
+			for (j = 2; j <= n; j = j * 2) {
+				k = k + n / 2;
+			}
+		}
+
+
+
+
+
+### 	Logrithmic Time Complexity aka O(LgN)
+--------------------------------------------------------------------------------------
+    for (int i = 1; i <=n; i *= c) {
+        // some O(1) expressions
+    }
+
+    for (int i = n; i > 0; i /= c) {
+        // some O(1) expressions
+    }
+
 	static void m5(int n) {
 		
 		for(int i=0;i<1000;i++) {
 			// some O(1) expressions
 		}
-		
+
 		for(int i=0;i<n;i*=2) {
 			// some O(1) expressions
 		}
 	}
 
---------------------------------------------------------------------------------------
 	static void m6(int n) {
 		
 		for(int i=n;i>0;i=i/3) {
 			// some O(1) expressions
 		}
 	}
-	
+
+	int k = 1;
+	for(var i=0;i<n;i++){
+		i*=k
+	}
+
+### 		Practice Questions:
 --------------------------------------------------------------------------------------
 	static void m7(boolean flag) {
 		if(flag) {
@@ -106,7 +162,8 @@
 			}
 		}
 	}
---------------------------------------------------------------------------------------
+
+	
 	static void m8()
     {
 	    int i, j;
@@ -120,5 +177,7 @@
     log n! = n*log n - n = O(n*log(n)) 
     ```
 --------------------------------------------------------------------------------------
+
+
 ### Quiz on Asymtotic analysis:      
 - https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/
