@@ -45,7 +45,7 @@
     
 ### 	Linear Time Complexity aka O(N)	
 --------------------------------------------------------------------------------------
--	int count(int arr[], int n)
+	int count(int arr[], int n)
 	{
 	  int sum = 0, i;
 	  for(i = 0; i < n; i++){
@@ -55,7 +55,7 @@
 	  return sum;
 	}
 
--	static void m4(int n) {
+	static void m4(int n) {
 		int a = 10;
 		a = a+5;
 		for(int i=0;i<a;i++) {
@@ -66,7 +66,7 @@
 		}
 	}
 
--	int count(int arr[], int n)
+	int count(int arr[], int n)
 	{
 	  for(i = n/2; i < n; i++){
          // some O(1) expressions
