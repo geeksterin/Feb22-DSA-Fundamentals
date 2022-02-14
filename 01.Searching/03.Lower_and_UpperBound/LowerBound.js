@@ -1,14 +1,20 @@
 let lower_bound = function (arr, target, flag) {
+
     let result = -1;
+    
     let low = 0, high = arr.length - 1;
     while (low <= high) {
         let mid = Math.floor((low + high) / 2);
+      
         if (arr[mid] === target) {
+            //we got the answer but storing it in tmp var and doing futher investigation.
             result = mid;
+            //futher investagtion
             if (flag === true) {
                 high = mid - 1;
             }
-        } else if (arr[mid] < target) {
+        } 
+        else if (arr[mid] < target) {
             low = mid + 1;
         } else
             high = mid - 1;

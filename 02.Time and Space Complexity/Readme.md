@@ -168,7 +168,18 @@
 		}
 	}
 
+	void function(int n){
+		int count = 0;
+		for (int i=n/2; i<=n; i++){
 	
+			for (int j=1; (j+n/2)<=n; j = j++)
+				for (int k=1; k<=n; k = k * 2){
+					count++;
+				}	
+			}
+		}
+	}
+
 	static void m8()
     {
 	    int i, j;
@@ -186,3 +197,4 @@
 
 ### Quiz on Asymtotic analysis:      
 - https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/
+- https://www.geeksforgeeks.org/analysis-algorithms-set-5-practice-problems/ 

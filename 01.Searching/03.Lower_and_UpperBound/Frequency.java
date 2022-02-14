@@ -1,5 +1,5 @@
-public class LowerBound {
-    static int lowerBound(int arr[], int target, boolean lowerbound) {
+public class Frequency {
+    static int FrequencyCount(int arr[], int target, boolean flag) {
         int low = 0, high = arr.length - 1;
         int result = -1;
 
@@ -7,13 +7,14 @@ public class LowerBound {
             int mid = low + (high - low) / 2;
 
             if (arr[mid] == target) {
-                // we got the answer but storing it in tmp var and doing futher investigation.
                 result = mid;
-                // futher investagtion
-                if (lowerbound == true) {
+                if (flag == true) {
+                    low = mid + 1;
+                } else
                     high = mid - 1;
-                }
-            } else if (arr[mid] < target) {
+            }
+
+            else if (arr[mid] < target) {
                 low = mid + 1;
             } else
                 high = mid - 1;
@@ -24,7 +25,11 @@ public class LowerBound {
 
     public static void main(String[] args) {
         int arr[] = { 1, 1, 2, 2, 2, 2, 3, 4, 5, 6, 6, 7, 7, 7 };
-        int target = 2;
-        System.out.println(lowerBound(arr, target, false));
+        int target = 100;
+        int lower_idx = FrequencyCount(arr, target, false);
+        int uppper_idx = FrequencyCount(arr, target, true);
+
+        //some logic ...
+        System.out.println(uppper_idx - lower_idx + 1);
     }
 }
