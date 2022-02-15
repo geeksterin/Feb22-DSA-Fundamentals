@@ -18,7 +18,9 @@ let binarySearch = function (arr, x) {
 		else
 			end = mid - 1;
 	}
-	return -100; //INVALID
+	// if we reach here, then element was
+	// not present
+	return -100; // any INVALID value is correct.
 }
 
 // Driver code

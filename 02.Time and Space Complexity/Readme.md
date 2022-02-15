@@ -1,6 +1,6 @@
-## Time and Space Complexity in Iterative Code.
-------------------------------------------------------------
- 1. Why Time and space Analysis..
+## 					Time and Space Complexity Analysis aka .
+-------------------------------------------------------------------------------------------------
+ 1. WHY Time and space Analysis..
  2. What is CASE in TC Anaylsis:
 	- worst case
 	- best case
@@ -10,8 +10,8 @@
 	-	Lower bound => big Omega
 	-	tight bound => Theta 
 
-### 	Calculating TC for iterative Code.
---------------------------------------------------------------------------------------
+### 	Calculating Time Complexity in Iterative Code
+---------------------------------------------------------------------------------------------------------
 ###	    Constant Time Complexity aka O(1)
 	void m1(){
 		  int a = 4;

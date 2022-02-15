@@ -14,6 +14,8 @@ public class BinarySearch {
             } else
                 high = mid - 1;
         }
+        // if we reach here, then element was
+        // not present
         return -1;
     }
 
