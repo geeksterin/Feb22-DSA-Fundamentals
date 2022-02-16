@@ -1,7 +1,7 @@
 package arrayPackageLect1;
 
 public class ReapeatMissing {
-	//https://www.geeksforgeeks.org/find-a-repeating-and-a-missing-number/
+	
 	 static void printElements(int arr[], int size)
 	    {
 	        int i;
