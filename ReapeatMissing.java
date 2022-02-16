@@ -2,7 +2,7 @@ package arrayPackageLect1;
 
 public class ReapeatMissing {
 	
-	 static void printElements(int arr[], int size)
+	public static void printElements(int arr[], int size)
 	    {
 	        int i;
 	        System.out.print("The repeating element is ");
