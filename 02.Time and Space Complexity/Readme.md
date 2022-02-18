@@ -9,13 +9,12 @@
 	- WORST CASE: 
 	 A input example or a scenario in which your given algorithm performs the worst in wrt to Time and Space is called WORST case. eg For a Linear search algorithm, a input array in which the target is at last index, for such a input case, the algorithm has to go through the entire array, making it work harder to find a answer.
 
-    ```
 	- BEST CASE: 
-	 A input example or a scenario in which your given algorithm performs the BEST  wrt to Time and Space is called BEST 	case. eg For a Linear search algorithm, a input array in which the target is in first index, for such a input case, the algorithm has to just do 1 comparision and it gets the answer.
+	 A input example or a scenario in which your given algorithm performs the BEST  wrt to Time and Space is called BEST case. eg For a Linear search algorithm, a input array in which the target is in first index, for such a input case, the algorithm has to just do 1 comparision and it gets the answer.
 
 	- AVERAGE CASE:	
 	A input example or a scenario in which your given algorithm takes AVERAGE time or Space is called AVERAGE case. eg For a Linear search algorithm, a input array in which the target is present somewhere in middle, for such a input case, the algorithm has to just do roughly half number of comparisions to get the answer.
-	```
+	
 
  3. Why asymtotic notation required and their terms.
     - 	Upper bound => big O 
