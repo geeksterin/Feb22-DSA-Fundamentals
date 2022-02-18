@@ -1,5 +1,6 @@
 ##                              Binary Search 
 -------------------------------------------------------------------------------------------------------
+- Binary Search Animation : https://www.interviewbit.com/courses/programming/topics/binary-search/
 - It's a efficient searching Algorithm, With every iteration we reduce the search space by half.
     - The Time Complexity in WORST CASE is O(lgN)
     - The Space Complexity is O(1)
@@ -7,8 +8,6 @@
 - At every step we compare mid element with the target, if mid element is not the target then we proceed to the half where target if present should be at and discard the another half.
 
 - After all the iterations when low == high, if target is present in the array then it should be present at low == high == mid , if not then we can surely say that target is not present in the array.
-
-- [x] Binary Search Animation : https://www.interviewbit.com/courses/programming/topics/binary-search/
 
 - Binary Search will work with high = arr.length and high = arr.length -1
     - ceil and floor and rounding function all will work, given you modify the binary search code a little for which you can refer below link.
