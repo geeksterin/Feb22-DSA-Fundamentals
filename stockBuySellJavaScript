@@ -1,0 +1,28 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+    
+ function stockBuySell() 
+ {  // one transaction allowed
+    	var prices = [100, 180, 260, 310, 40, 535, 695];
+		var leastSoFar = Number.MAX_VALUE;
+		var maxProfit = 0; // overallProfit
+		var profitIfSoldToday = 0;
+		
+		for(let i=0;i<prices.length;i++){
+			if(prices[i]<leastSoFar)
+			{
+				leastSoFar = prices[i];
+			}
+			
+			profitIfSoldToday = prices[i] - leastSoFar;
+			if(profitIfSoldToday > maxProfit ){
+				maxProfit = profitIfSoldToday;
+			}
+			
+		}
+		
+		console.log("Max profit is - "+ maxProfit);
+		
+	}
+	
+stockBuySell();
