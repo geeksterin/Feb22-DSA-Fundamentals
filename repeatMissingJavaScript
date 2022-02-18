@@ -1,0 +1,27 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+    
+ function repeatMissing() 
+ {
+     var arr = [7, 3, 4, 5, 5, 6, 2];
+     size = arr.length;
+	   var i;
+	        console.log("The repeating element is ");
+	  
+	        for (i = 0; i < size; i++) {
+	            let abs_val = Math.abs(arr[i]);
+	            if (arr[abs_val - 1] > 0)
+	                arr[abs_val - 1] = -arr[abs_val - 1];
+	            else
+	                console.log(abs_val);
+	        }
+	  
+	        console.log("And the missing element is ");
+	        for (i = 0; i < size; i++) {
+	            if (arr[i] > 0)
+	                console.log(i + 1);
+	        }
+		
+	}
+	
+repeatMissing();
