@@ -10,11 +10,9 @@
 
 - [x] Binary Search Animation : https://www.interviewbit.com/courses/programming/topics/binary-search/
 
-- BS will work with high = arr.length
-- ceil and floor both will work. 
-- Rounding will also work 
-
-https://leetcode.com/discuss/interview-question/1322500/5-variations-of-Binary-search-(A-Self-Note) 
+- Binary Search will work with high = arr.length and high = arr.length -1
+    - ceil and floor and rounding function all will work, given you modify the binary search code a little for which you can refer below link.
+    https://leetcode.com/discuss/interview-question/1322500/5-variations-of-Binary-search-(A-Self-Note) 
 
 
 
