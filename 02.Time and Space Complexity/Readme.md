@@ -1,6 +1,7 @@
-## 					Time and Space Complexity Analysis aka .
+## 					Time and Space Complexity Analysis
 -------------------------------------------------------------------------------------------------
  1. WHY Time and space Analysis..
+
  2. What is CASE in TC Anaylsis:
 	- worst case
 	- best case
@@ -8,7 +9,7 @@
  3. Why asymtotic notation required and their terms.
     - 	Upper bound => big O 
 	-	Lower bound => big Omega
-	-	tight bound => Theta 
+	-	Tight bound => Theta 
 
 ### 	Calculating Time Complexity in Iterative Code
 ---------------------------------------------------------------------------------------------------------
@@ -26,20 +27,6 @@
 		int temp = a;
 		a = b;
 		b = temp;
-	}
-
-	void m2(){	
-		 for(int i=0;i<1000;i++) {
-			// some O(1) expressions
-		}
-	}
-
-	void m3(){	
-		 for(int i=0;i<1000;i++) {
-			for(int j=0;j<i;j++>){
-				// some O(1) statment.
-			}
-		}
 	}
 		
     
@@ -66,18 +53,31 @@
 		}
 	}
 
-	int count(int arr[], int n)
-	{
+
+	 for(i = 1; i < n/2; i++){
+        // some O(1) expressions
+	 }
+
+	 for(i = 1; i<n ; i+=2>){
+		 //some constant operations.
+	 }
+
 	  for(i = n/2; i < n; i++){
          // some O(1) expressions
 	  }
+
+	  
+	void m2(){	
+	 for(int i=0;i<1000;i++) {
+			// some O(1) expressions
+		}
 	}
 
 ### 	Quadratic Time Complexity aka O(N*N)
 --------------------------------------------------------------------------------------
 	static int m1(int n) {	
 		for (int i = 0; i <= n; i++) {
-			for (int j = 0; j <= m>; j--) {
+			for (int j = 0; j <= m; j++) {
 				count = count + 1;
 			}
 		}
@@ -101,6 +101,14 @@
 			value += 1;
 		}
 	}
+
+	void m3(){	
+	 for(int i=0;i<1000;i++) {
+		for(int j=0;j<i;j++){
+			// some O(1) statment.
+		}
+	 }
+   }
 
 ### 	Linear-Arithmetic Time Complexity aka O(NlgN)
 --------------------------------------------------------------------------------------
@@ -171,7 +179,6 @@
 	void function(int n){
 		int count = 0;
 		for (int i=n/2; i<=n; i++){
-	
 			for (int j=1; (j+n/2)<=n; j = j++)
 				for (int k=1; k<=n; k = k * 2){
 					count++;
@@ -190,7 +197,12 @@
     }
     ```
     Stirling’s approximation (or Stirling’s formula). 
-    log n! = n*log n - n = O(n*log(n)) 
+    (logn)! = n*log n - n = O(n*log(n)) 
+
+	n!=1. … .n <= n. …. .n = n^n obiously, so log(n!)<=n.log(n)
+	n! = 1. … .n >= (n/2)…..n>=(n/2)^(n/2)
+	log(n!) >= (n/2)*(log(n)-log(2)) in the same ballpark as n.log(n)
+	So O(log(n!)) = O(n.log(n))
     ```
 --------------------------------------------------------------------------------------
 

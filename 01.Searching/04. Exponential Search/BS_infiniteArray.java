@@ -7,7 +7,7 @@ public class BS_infiniteArray {
             low = high ;
             high = 2*high;
             if(high >=arr.length)
-                high = arr.length;
+                high = arr.length-1;
         }
         //regular binary Search.
         while(low<=high){

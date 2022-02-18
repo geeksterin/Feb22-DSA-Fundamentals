@@ -8,8 +8,9 @@ let binarySearch = function (arr, x) {
         start = end;
         end = 2 * end;
         if (end >= arr.length)
-            end = arr.length;
+            end = arr.length-1;
     }
+    //regular binary search.
     while (start <= end) {
 
         // Find the mid index
@@ -24,7 +25,6 @@ let binarySearch = function (arr, x) {
     }
     return -1;
 }
-
 // Driver code
 let arr = [1, 3, 5, 7, 8, 9];
 let x = 5;
