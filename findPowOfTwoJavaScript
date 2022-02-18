@@ -1,0 +1,19 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+    
+ function findPowOfTwo(inputNum) 
+ {
+		if (inputNum == 0) {
+			return false;
+		}
+		while (inputNum != 1) { // entered 
+			// its not a pow of two
+			if (inputNum % 2 != 0) {// entered will give 0 
+				return false;
+			}
+			inputNum = inputNum / 2;
+		}
+		return true;
+	}
+	
+	console.log(findPowOfTwo(56));
