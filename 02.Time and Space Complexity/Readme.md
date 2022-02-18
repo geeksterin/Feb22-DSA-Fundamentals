@@ -7,7 +7,7 @@
  2. What does CASE mean in Asymptotic Anaylsis:
 	```
 	- WORST CASE: 
-	A input example or a scenario in which your given algorithm performs the worst in wrt to Time and <br> Space is called WORST case. eg For a Linear search algorithm, a input array in which the target is at last index, for such a input case, the algorithm has to go through the entire array, making it work harder to find a answer.
+	A input example or a scenario in which your given algorithm performs the worst in wrt to Time and\ Space is called WORST case. eg For a Linear search algorithm, a input array in which the target is\ at last index, for such a input case, the algorithm has to go through the entire array, making it work harder to find a answer.
 
 	- BEST CASE: 
 	 A input example or a scenario in which your given algorithm performs the BEST  wrt to Time and Space is called BEST 	case. eg For a Linear search algorithm, a input array in which the target is in first index, for such a input case, the algorithm has to just do 1 comparision and it gets the answer.
