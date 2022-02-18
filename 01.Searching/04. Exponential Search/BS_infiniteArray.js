@@ -7,8 +7,10 @@ let binarySearch = function (arr, x) {
     while (x > arr[end]) {
         start = end;
         end = 2 * end;
-        if (end >= arr.length)
-            end = arr.length-1;
+        if (end >= arr.length) {
+            end = arr.length - 1;
+            break;
+        }
     }
     //regular binary search.
     while (start <= end) {
@@ -27,6 +29,6 @@ let binarySearch = function (arr, x) {
 }
 // Driver code
 let arr = [1, 3, 5, 7, 8, 9];
-let x = 5;
+let x = 15;
 console.log(binarySearch(arr, x));
 
