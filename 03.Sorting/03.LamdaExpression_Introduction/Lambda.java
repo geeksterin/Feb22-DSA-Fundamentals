@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class lamda {
+public class Lambda {
 
     static class comp implements Comparator {
         @Override
@@ -57,7 +57,7 @@ public class lamda {
 
         // Lamda expression. in java 8 : de-facto way!
         Arrays.sort(sa, (x, y) -> {
-            return -1*(x.length() - y.length());
+            return -1 * (x.length() - y.length());
         });
 
         for (String x : sa) {
