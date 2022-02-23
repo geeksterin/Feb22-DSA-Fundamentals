@@ -1,6 +1,7 @@
 ##                              Binary Search 
 -------------------------------------------------------------------------------------------------------
 - Binary Search Animation : https://www.interviewbit.com/courses/programming/topics/binary-search/
+
 - It's a efficient searching Algorithm, With every iteration we reduce the search space by half.
     - The Time Complexity in WORST CASE is O(lgN)
     - The Space Complexity is O(1)
