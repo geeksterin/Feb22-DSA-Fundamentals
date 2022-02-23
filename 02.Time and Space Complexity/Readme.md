@@ -1,8 +1,10 @@
 ## 					Time and Space Complexity Analysis
 -------------------------------------------------------------------------------------------------
  1. Why Time and Space Analysis is required:
-	- So that we can rank different algorithms for same given problem. 
-	- The very famous metric used to compare multiple algorithms is "Time" taken for execution and "Space" (memory consumption/ memory footrpint) taken by the program.
+	- So that we can rank different algorithms solving the same problem. 
+	- The very useful metric used to compare multiple algorithms are:
+		- "Time" : Execution Time.
+		- "Space": (memory consumption/ memory footrpint) taken by the program.
 
  2. What does CASE mean in Asymptotic Anaylsis:
 	
@@ -20,15 +22,21 @@
 	-	Lower bound => big Omega
 	-	Tight bound => Theta 
 
+### RULES for computing Time Complexity and Space Complexity 
+-----------------------------------------------------------------------------------------------------
+1. Drop all the constants (C).
+2. Only take the highest degree in a polynomial expression.
+
 ### 	Calculating Time Complexity in Iterative Code
 ---------------------------------------------------------------------------------------------------------
 ###	    Constant Time Complexity aka O(1)
+	
 	void m1(){
-		  int a = 4;
+		  int a = 10;
 		  int b = 6;
 		  int c;
 		  c = a + b;
-		  System.out.println(c);
+		  print(c);
 	}
 
 	static void m2() {
@@ -77,12 +85,14 @@
 
 	  
 	void m2(){	
-	 for(int i=0;i<1000;i++) {
+	 	for(int i=0;i<1000;i++) {
 			// some O(1) expressions
 		}
 	}
 
-### 	Quadratic Time Complexity aka O(N*N)
+### 	Polynomial Time Complexity 
+
+#### 	Quadratic Time Complexity aka O(N*N)
 --------------------------------------------------------------------------------------
 	static int m1(int n) {	
 		for (int i = 0; i <= n; i++) {
@@ -104,14 +114,7 @@
 		return count;
 	}
 
-	var value = 0;
-	for(var i=0;i<n;i++){
-		for(var j=0;j<i;j++){
-			value += 1;
-		}
-	}
-
-	void m3(){	
+[x]	void m3(){	
 	 for(int i=0;i<1000;i++) {
 		for(int j=0;j<i;j++){
 			// some O(1) statment.
@@ -119,9 +122,70 @@
 	 }
    }
 
-### 	Linear-Arithmetic Time Complexity aka O(NlgN)
+### 	Logrithmic Time Complexity aka O(LgN)
+--------------------------------------------------------------------------------------
+    for (int i = 1; i <=n; i = i*2) {
+        // some O(1) expressions
+    }
+
+    for (int i = n; i >= 0; i /= 2) {
+        // some O(1) expressions
+    }
+
+	static void m5(int n) {
+		for(int i=0;i<1000;i++) {
+			// some O(1) expressions
+		}
+		for(int i=0;i<n;i*=2) {
+			// some O(1) expressions
+		}
+	}
+
+	static void m6(int n) {
+		for(int i=n;i>0;i=i/c) {
+			// some O(1) expressions
+		}
+	}
+
+	int k = 2;
+	for(var i=0;i<n;i++){
+		i*=k
+	}
+
+
+
+
+
+
+
+
+
+
+### 	Square-Root Time complexity aka O(Sqrt(N))
+--------------------------------------------------------------------------------------
+		for(int i=0;i<Sqrt(N);i++){
+			//some 0(1) stmt
+		}
+
+	    for(int i =0;i*i<n;i++){
+			//some 0(1) stmt
+		}
+		
+		int p = 0;
+		for(int i=1;p<=n;p++){
+			p = p+i;
+		}
+
+### 	Linear-Arithmetic Time Complexity Class aka O(NlgN)
 --------------------------------------------------------------------------------------
 		int i, j, k = 0;
+		for (i = n / 2; i <= n; i++) {
+			for (j = 2; j <= n; j = j * 2) {
+				//stmt 
+			}
+		}
+
+[x]		int i, j, k = 0;
 		for (i = n / 2; i <= n; i++) {
 			for (j = 2; j <= n; j = j * 2) {
 				k = k + n / 2;
@@ -129,45 +193,9 @@
 		}
 
 
-
-
-
-### 	Logrithmic Time Complexity aka O(LgN)
+### 	Practice Questions:
 --------------------------------------------------------------------------------------
-    for (int i = 1; i <=n; i *= c) {
-        // some O(1) expressions
-    }
-
-    for (int i = n; i > 0; i /= c) {
-        // some O(1) expressions
-    }
-
-	static void m5(int n) {
-		
-		for(int i=0;i<1000;i++) {
-			// some O(1) expressions
-		}
-
-		for(int i=0;i<n;i*=2) {
-			// some O(1) expressions
-		}
-	}
-
-	static void m6(int n) {
-		
-		for(int i=n;i>0;i=i/3) {
-			// some O(1) expressions
-		}
-	}
-
-	int k = 1;
-	for(var i=0;i<n;i++){
-		i*=k
-	}
-
-### 		Practice Questions:
---------------------------------------------------------------------------------------
-	static void m7(boolean flag) {
+1.	static void m7(boolean flag) {
 		if(flag) {
 			for(int i=0;i<100;i++) {
 				// some O(1) expressions
@@ -185,7 +213,7 @@
 		}
 	}
 
-	void function(int n){
+2. 	void function(int n){
 		int count = 0;
 		for (int i=n/2; i<=n; i++){
 			for (int j=1; (j+n/2)<=n; j = j++)
@@ -196,7 +224,7 @@
 		}
 	}
 
-	static void m8()
+3. 	static void m8()
     {
 	    int i, j;
 	    for (i = 1; i <= n; i++)
@@ -219,3 +247,4 @@
 ### Quiz on Asymtotic analysis:      
 - https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/
 - https://www.geeksforgeeks.org/analysis-algorithms-set-5-practice-problems/ 
+- https://www.youtube.com/watch?v=Q_1M2JaijjQ 
