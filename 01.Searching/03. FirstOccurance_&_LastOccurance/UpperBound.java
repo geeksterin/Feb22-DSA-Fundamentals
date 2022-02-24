@@ -7,9 +7,8 @@ public class UpperBound {
             int mid = low + (high - low) / 2;
             if (arr[mid] == target) {
                 result = mid;
-                if (flag == true) {
-                   low = mid+1;
-                }
+                //futher investigation
+                low = mid + 1;
             } else if (arr[mid] < target) {
                 low = mid + 1;
             } else

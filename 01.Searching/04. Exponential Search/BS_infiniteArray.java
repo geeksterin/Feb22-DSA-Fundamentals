@@ -2,9 +2,9 @@ public class BS_infiniteArray {
     static int bs(int[] arr, int target) {
         int low = 0, high = 1;
 
-        // setting the upper limit
+        // setting the upper limit aka high
         while (target >= arr[high]) {
-            low = high;
+            low = high; // optimization
             high = 2 * high;
             if (high >= arr.length - 1) {
                 high = arr.length - 1;

@@ -1,5 +1,5 @@
 public class LowerBound {
-    static int lowerBound(int arr[], int target, boolean lowerbound) {
+    static int firstOcc(int arr[], int target) {
         int low = 0, high = arr.length - 1;
         int result = -1;
 
@@ -10,9 +10,7 @@ public class LowerBound {
                 // we got the answer but storing it in tmp var and doing futher investigation.
                 result = mid;
                 // futher investagtion
-                if (lowerbound == true) {
-                    high = mid - 1;
-                }
+                high = mid - 1;
             } else if (arr[mid] < target) {
                 low = mid + 1;
             } else
@@ -25,6 +23,6 @@ public class LowerBound {
     public static void main(String[] args) {
         int arr[] = { 1, 1, 2, 2, 2, 2, 3, 4, 5, 6, 6, 7, 7, 7 };
         int target = 2;
-        System.out.println(lowerBound(arr, target, false));
+        System.out.println(firstOcc(arr, target));
     }
 }

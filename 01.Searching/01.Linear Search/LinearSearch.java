@@ -1,4 +1,5 @@
 public class LinearSearch {
+    //TC: O(N)
     public static int search(int arr[], int x) {
         int n = arr.length;
         for (int i = 0; i < n; i++) {

@@ -1,11 +1,12 @@
 
 public class BinarySearch {
+    // TC : O(lgN)
     static int bs(int arr[], int target) {
 
         int low = 0, high = arr.length - 1;
 
         while (low <= high) {
-            // int mid = (low + high) / 2;
+            // int mid = (low + high) / 2; Potential Integer Overflow
             int mid = low + (high - low) / 2;
             if (arr[mid] == target)
                 return mid;
@@ -16,11 +17,12 @@ public class BinarySearch {
         }
         // if we reach here, then element was
         // not present
-        return -1;
+        System.out.println("Target not found");
+        return 0; // dummy number.
     }
 
     public static void main(String[] args) {
-        int arr[] = { 10, 11 };
+        int arr[] = { 1, 2, 4, 5, 6, 9, 11, 13 };
         int target = 11;
         System.out.println(bs(arr, target));
     }
