@@ -1,7 +1,8 @@
 public class LinearSearch {
     //TC: O(N)
-    public static int search(int arr[], int x) {
-        int n = arr.length;
+    //SC: O(1)
+    public static int search(int arr[], int x) { //extra space 
+        int n = arr.length; //extra space.
         for (int i = 0; i < n; i++) {
             if (arr[i] == x)
                 return i;
@@ -15,7 +16,7 @@ public class LinearSearch {
         int x = 10;
 
         // Function call
-        int result = search(arr, x);
+        int result = search(arr, x); //extra space BUT not a aux space.
         if (result == -1)
             System.out.print("Element is not present in array");
         else

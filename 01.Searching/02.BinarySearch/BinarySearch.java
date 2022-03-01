@@ -1,6 +1,7 @@
 
 public class BinarySearch {
     // TC : O(lgN)
+    // SC : O(1)
     static int bs(int arr[], int target) {
 
         int low = 0, high = arr.length - 1;
@@ -22,7 +23,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 1, 2, 4, 5, 6, 9, 11, 13 };
+        int arr[] = { 1, 2, 4, 5, 6, 9, 11, 13 }; // THis is not a extra space.
         int target = 11;
         System.out.println(bs(arr, target));
     }

@@ -176,7 +176,7 @@
 		}
 		
 		int p = 0;
-		for(int i=1;p<=n;p++){
+		for(int i=1;p<=n;i++){
 			p = p+i;
 		}
 
@@ -252,3 +252,15 @@
 - https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/
 - https://www.geeksforgeeks.org/analysis-algorithms-set-5-practice-problems/ 
 - https://www.youtube.com/watch?v=Q_1M2JaijjQ 
+
+
+
+
+### 								Space Complexity Anaylsis:
+-------------------------------------------------------------------------------------------------------
+- Extra space: Any memeory allocation done apart from holding the inputs is considered as extra space. 
+- Auxliary Space:  Any memory allocation which is related to the  input size is considered as an auxilary space. Also It is a subset of extra space. 
+	- So to calculate the space compelxity of any algorithm we need to find the auxilary space taken by the algorithm.
+
+- int high = arr.length;
+- int b[] = new int[arr.length];

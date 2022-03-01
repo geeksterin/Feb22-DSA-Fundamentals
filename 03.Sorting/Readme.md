@@ -5,6 +5,10 @@
 [x] Classification of Sorting Algorithms.
 
 
+Online Algorithm: A algo which can take inputs in real time are called online algorithms.
+
+
+
 ## Quiz on sorting:
 - https://www.geeksforgeeks.org/quiz-insertionsort-gq/ 
 

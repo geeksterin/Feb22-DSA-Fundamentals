@@ -1,6 +1,7 @@
 // Java program for implementation of Insertion Sort
 public class InsertionSort {
-    /* Function to sort array using insertion sort */
+    //TC : O(N) to O(N^2)
+    //SC : O(1)
     void sort(int arr[]) {
         int n = arr.length;
 

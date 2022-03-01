@@ -1,23 +1,28 @@
 
 //Java program for implementation of Bubble Sort
-public class BubbleSort {
-    // TC: Theta(N^2)
+public class Optimized_BubbleSort {
+    // TC: O(N) to O(N^2)
     // SC: O(1)
     void bubbleSort(int arr[]) {
         int n = arr.length;
 
-        for (int i = 0; i < n - 1; i++) {
+        boolean hasSwapped = false;
 
-            for (int j = 0; j < n - 1; j++) {
+        for (int i = 0; i < n - 1; i++) {
+            hasSwapped = false;
+            for (int j = 0; j < n - 1 - i; j++) {
 
                 if (arr[j] > arr[j + 1]) {
                     // swap arr[j+1] and arr[j]
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
+                    hasSwapped = true;
                 }
 
             }
+            if (hasSwapped == false)
+                break;
         }
         // sorting is complete
     }
