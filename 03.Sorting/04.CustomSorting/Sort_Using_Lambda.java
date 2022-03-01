@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Lambda {
+public class Sort_Using_Lambda {
 
     static class comp implements Comparator {
         @Override

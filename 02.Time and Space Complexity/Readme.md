@@ -4,9 +4,22 @@
 	- So that we can rank different algorithms solving the same problem. 
 	- The very useful metric used to compare multiple algorithms are:
 		- "Time" : Execution Time.
-		- "Space": (memory consumption/ memory footrpint) taken by the program.
+		- "Space": (memory consumption/ memory footrpint) at runtime taken by the program.
 
- 2. What does CASE mean in Asymptotic Anaylsis:
+
+2. How do I measure time and space taken by algorithms?
+---------------------------------------------------------------------------------------------------
+1. 	Running the algorithms directly on a machine. 
+	- Hardware and software configurations of the machine on which the algo might give different time and space.
+	- Very very laborius approch.
+	- Programming language depedency. [C,C++, java >> python, js] -> compilation.
+
+2. Mathematical model of computation: [Systematic approch]
+	-  Asymtotic Analysis  (Is not so mathematically deep)
+	-  Amortized analysis. (Research)
+
+
+ 2. What does **CASE** mean in Asymptotic Anaylsis:
 	
 	- **WORST CASE**: 
 	 A input example or a scenario in which your given algorithm performs the worst in wrt to Time and Space is called WORST case. eg For a Linear search algorithm, a input array in which the target is at last index, for such a input case, the algorithm has to go through the entire array, making it work harder to find a answer.
@@ -136,7 +149,7 @@
 		for(int i=0;i<1000;i++) {
 			// some O(1) expressions
 		}
-		for(int i=0;i<n;i*=2) {
+		for(int i=0;i<n;i=i*2) {
 			// some O(1) expressions
 		}
 	}
@@ -151,15 +164,6 @@
 	for(var i=0;i<n;i++){
 		i*=k
 	}
-
-
-
-
-
-
-
-
-
 
 ### 	Square-Root Time complexity aka O(Sqrt(N))
 --------------------------------------------------------------------------------------
