@@ -1,3 +1,4 @@
+import javax.net.ssl.X509ExtendedKeyManager;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,11 +7,12 @@ public class Main {
 
         // printThing(myCat);
 
-        printThing((s) -> System.out.println("Meow" + s));
+        Printable x = () -> System.out.println("Meow");
+        printThing(x);
 
     }
 
     static void printThing(Printable thing) {
-        thing.print("!");
+        thing.print();
     }
 }

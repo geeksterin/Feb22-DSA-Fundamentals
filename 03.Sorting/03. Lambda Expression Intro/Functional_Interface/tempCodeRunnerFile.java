@@ -1,3 +1,0 @@
-  // myCat.print();
-
-        // printThing(myCat);

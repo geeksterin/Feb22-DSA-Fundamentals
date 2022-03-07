@@ -10,8 +10,15 @@
 -   https://gifer.com/en/gifs/recursion
 
 
-###             Foundational Question on Recursion: 
-----------------------------------------------------------------------------
+
+###                     Practice Questions on Recursion
+---------------------------------------------------------------------------------------------
+1. https://www.geeksforgeeks.org/practice-questions-for-recursion-set-2/?ref=lbp 
+2. https://www.geeksforgeeks.org/practice-questions-for-recursion-set-3/?ref=lbp 
+
+
+###             Foundational Coding Question on Recursion: 
+-------------------------------------------------------------------------------------------
 -   Printing no 1 to n
 -   Printing no from n to 1
 -   Finding a element x in an array using recursion.
@@ -21,10 +28,15 @@
 -   Fibonacci series upto N.
 -   Sum of digits using recursion
 -   Check if the array  isSorted or not.
+-   GCD using recursion.
+-   Pow(a,b) using recursion.
 -   Finding first and last Occurance of 'a' char in "abcdefabcdef"
 -   Move all X's to end of the String.
 -   Recursive Binary search.
 -   Check if the given string is a palindrome using recursion.
+-   Sorting a stack using recursion.
+-   Reverse the number using recursion.
+    https://www.geeksforgeeks.org/write-a-program-to-reverse-digits-of-a-number/?ref=leftbar-rightbar 
 
 
 

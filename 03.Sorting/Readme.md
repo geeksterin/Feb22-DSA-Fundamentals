@@ -13,6 +13,17 @@ Online Algorithm: A algo which can take inputs in real time are called online al
 - https://www.geeksforgeeks.org/quiz-insertionsort-gq/ 
 
 
+
+- Comparable interface is meant for java langauge.
+- Also used by sort function internally to sort things in ascending order.
+
+- Comparataor interface is meant for developers.
+- you can provide custom logic.
+- 
+
+
+
+
 ##                           Lambda Expression 
 --------------------------------------------------------------------------------------------
 ### Defination: 
