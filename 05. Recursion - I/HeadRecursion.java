@@ -1,14 +1,14 @@
 public class HeadRecursion {
 
     static void printDec(int i) {
-        // stopping
-        if (i > 10) {
+        // Base case
+        if (i >= 10) {
+            System.out.println(i);
             return;
         }
-        printDec(i + 1); // head recursion.
-        //defering my computation.
-        System.out.print(i + ",");
-        //some more statemets
+
+        printDec(i + 1);
+        System.out.println(i);
     }
 
     public static void main(String[] args) {
