@@ -12,7 +12,7 @@ public class MoveAllXsToEnd {
 		}
 
 		if (s.charAt(idx) == 'x') {
-			++count;
+			count++;
 		} else {
 			newString += s.charAt(idx);
 		}

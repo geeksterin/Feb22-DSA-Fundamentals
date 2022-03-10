@@ -1,5 +1,8 @@
 
 /* Java program for Merge Sort */
+//TC: Theta (NlgN)
+//SC: O(N)
+
 public class MergeSort {
     void merge(int a[], int l, int h) {
         int mid = (h + l) / 2;
@@ -32,16 +35,16 @@ public class MergeSort {
     // Main function that sorts arr[l..r] using
     // merge()
     void sort(int arr[], int l, int r) {
-        if (l > r)
-            return;
 
-        // Find the middle point
-        int m = l + (r - l) / 2;
-        // Sort first and second halves
-        sort(arr, l, m);
-        sort(arr, m + 1, r);
-        // Merge the sorted halves
-        merge(arr, l, r);
+        if (l < r) {
+            // Find the middle point
+            int m = l + (r - l) / 2;
+            // Sort first and second halves
+            sort(arr, l, m);
+            sort(arr, m + 1, r);
+            // Merge the sorted halves
+            merge(arr, l, r);
+        }
 
     }
 
@@ -55,7 +58,7 @@ public class MergeSort {
 
     // Driver code
     public static void main(String args[]) {
-        int arr[] = { 12, 11, 13, 5, 6, 7, -1, 0 }; 
+        int arr[] = { 12, 11, 13, 5, 6, 7, -1, 0 };
 
         MergeSort ob = new MergeSort();
         ob.sort(arr, 0, arr.length - 1);

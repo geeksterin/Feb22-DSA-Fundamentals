@@ -15,15 +15,15 @@ public class QuickSort {
             }
         }
         // swap(a[i + 1], a[e]);
-        int tmp = a[i + 1];
-        a[i + 1] = a[e];
+        int tmp = a[++i];
+        a[i] = a[e];
         a[e] = tmp;
-        return i + 1;
+        return i;
     }
 
     static void quicksort(int arr[], int s, int e) {
-        if (s >= e)
-            return;
+        //Base case.
+        if (s >= e) return;
         int pivot_idx = partition(arr, s, e);
         quicksort(arr, s, pivot_idx - 1);
         quicksort(arr, pivot_idx + 1, e);
