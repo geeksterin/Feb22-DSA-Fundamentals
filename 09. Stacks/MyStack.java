@@ -19,7 +19,7 @@ class MyStack {
             return false;
         } else {
             // top+=1;
-            a[top++] = x;
+            a[++top] = x;
             System.out.println(x + " pushed into stack");
             return true;
         }

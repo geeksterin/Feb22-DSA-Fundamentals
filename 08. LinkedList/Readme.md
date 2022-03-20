@@ -5,22 +5,30 @@
     - Insertion in front, middle and end.
     - deletion in front, middle and end.
     - Search.
-3. Double Linked List aka doubly linkedlist. [x]
+    - Delete whole linked List.
+    - Implement toString() function for a given LinkedList.
+3. Java LinkedList Collection.
+
+4. Double Linked List aka doubly linkedlist. [x]
 
 ###  Compare Linked-List vs Arrays
 --------------------------------------------------------------------------------------------------
-
-
 
 
 ###       Linked-List Questions:
 --------------------------------------------------------------------------------------------------
 1.    Print the kth element from the end in a singly linkedlist.
 2.    Detect a cycle in a linked list.
-      -  find the point of cycle formation.
+      -  find the point of cycle formation. [x]
+      
 3.    Find Middle of linked List.
-4.    Check if two linked list merge into 1 or not.
-5.    Merge two single linked list into 1 list.
+4.    Reverse a single linked list.
+5.    Check if LinkedList is palindrome or not. 
+
+5.    Delete the node from a infinite linkedlist.
+6.    Check for intersection of two linked list. 
+7.    Merge two single linked list into 1 list.[x]
+8.   
 
 
 

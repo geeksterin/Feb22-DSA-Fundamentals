@@ -1,28 +1,20 @@
 ##                             Sorting 
 -------------------------------------------------------------------------------------------
-
-[x] Find out the inbuilt functions in java/js for sort.
-[x] Classification of Sorting Algorithms.
-
-
 Online Algorithm: A algo which can take inputs in real time are called online algorithms.
 
+
+[x] Find out the inbuilt functions in java for sort.
+-   https://www.geeksforgeeks.org/introsort-or-introspective-sort/ 
+[x] Classification of Sorting Algorithms.
 
 
 ## Quiz on sorting:
 - https://www.geeksforgeeks.org/quiz-insertionsort-gq/ 
-
-
-
 - Comparable interface is meant for java langauge.
 - Also used by sort function internally to sort things in ascending order.
-
 - Comparataor interface is meant for developers.
 - you can provide custom logic.
 - 
-
-
-
 
 ##                           Lambda Expression 
 --------------------------------------------------------------------------------------------

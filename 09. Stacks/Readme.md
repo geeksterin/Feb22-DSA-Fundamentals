@@ -6,6 +6,10 @@
 
     Note: Please note that the Stack class in Java is a legacy class and inherits from Vector in Java. It is a thread-safe class and hence involves overhead when we do not need thread safety. It is recommended to use ArrayDeque for stack implementation as it is more efficient in a single-threaded environment.
 
+3. Why does array start with index zero, infact why everything is zero-based in CSE
+-   https://iq.opengenus.org/array-indices-start-from-1/ 
+
+
 
 ###                 Questions on Stacks:
 ------------------------------------------------------------------------------------------
@@ -17,3 +21,8 @@
     - https://www.geeksforgeeks.org/leaders-in-an-array/ ****
 
 ###  How to identitfy when to use stack.
+
+
+"Hi how is this class going?"
+"going? class this is how Hi"
+Hint: Stack<> stk = new Stack<String>()

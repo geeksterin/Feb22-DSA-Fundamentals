@@ -9,8 +9,3 @@
 
 ###                 Questions on Queues:
 --------------------------------------------------------------------------------------------
--  Implement atoi function.
--  Sort the queue without using O(1) Space.
--  Printing all substrings of a string.
--  Cumalative sum.
--  Next Greater element to right
