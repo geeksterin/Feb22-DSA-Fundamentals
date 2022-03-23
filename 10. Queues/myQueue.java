@@ -33,7 +33,7 @@ class MyQueue {
             arr[rear] = element;
         }
     }
-
+    
     public void deQueue() {
         int element;
         if (isEmpty()) {
