@@ -16,7 +16,7 @@
 14. Degree of a node: The degree of a node of a tree is the number of subtrees having this node as a root. 
 				  In other words, the degree is the number of descendants of a node. If the degree is zero, 
 				  it is called a terminal or leaf node of a tree.
-15. Degree of a Tree: max degree of any node
+15. Degree of a Tree: max degree of any node / degree of the root 
 
 16. Height of Node : The height of a node is the number of edges from the node to the deepest leaf. 
 17. Height of Tree : Height of root node.
@@ -26,12 +26,12 @@
 -------------------------------------------------------------------------------------
 Node Edge relationship : #nodes  = (n-1) edges
 
-**What is Tree?**
-------------------
-
+**What is Tree Data structure?**
+------------------------------------------
+- Tree is acyclic graph which has root node.
 
 ***What is a binary Tree?***
-
+It's a tree which has atmost 2 children 
 
 ### Binary Tree Properties
 ----------------------------
@@ -58,12 +58,12 @@ parent = floor((i-1)/2)
 
 
 **Problems on Binary Trees.**
-1. Inorder,pre-order, post-order using recursion.
+1. Traversals: Inorder,pre-order, post-order using recursion.
 2. getCount of nodes.
 3. getLeaf counts
 4. getSum of nodes.
 5. Height of tree
-6. Depth of  a tree
+6. Depth of  a tree.
 7. Printing all leaves of tree / print non-leaves of a tree
 8. PrintKthLevel
 9. Level order traversal (Recursive + Iterative)
