@@ -15,8 +15,6 @@ class Node {
 // A Java program to introduce Binary Tree
 public class BinaryTree {
 
-	static int levelSoFar = 0;
-
 	public static void preorder(Node root) {
 		// Base case => to check for null roots
 		if (root == null)
@@ -100,15 +98,27 @@ public class BinaryTree {
 		return get_leaf(root.left) + get_leaf(root.right);
 	}
 
+	static boolean pathSum(Node root, int Tsum) {
+		if (root == null)
+			return false;
+		if (root.key == Tsum && root.left == null && root.right == null)
+			return true;
+
+		return pathSum(root.left, Tsum - root.key) || pathSum(root.right, Tsum - root.key);
+	}
+
+	static int levelSoFar = 0;
+
 	// Printing the left view nodes only.
 	static void leftView(Node root, int currlevel) {
+
 		if (root == null)
 			return;
 
-		if (currlevel >= levelSoFar) {
+		if (currlevel > levelSoFar) {
 			// reached a new level
 			System.out.println(root.key);
-			levelSoFar++; // indicates that i have visited this level
+			levelSoFar++; // indicates that i have visited this level before
 		}
 
 		leftView(root.left, currlevel + 1);
@@ -153,14 +163,16 @@ public class BinaryTree {
 			int k = q.size();
 			while (k > 0) {
 				Node front = q.poll();
+				// Adding valid left child
 				if (front.left != null) {
 					q.add(front.left);
 				}
+				// Adding valid right child
 				if (front.right != null) {
 					q.add(front.right);
 				}
-				System.out.print(front.key + ",");
 				k--;
+				System.out.print(front.key + ",");
 			}
 			System.out.println();
 		}
@@ -185,6 +197,33 @@ public class BinaryTree {
 					q.add(front.right);
 				}
 			}
+			System.out.println();
+		}
+	}
+
+	// level order traversal : Iterative way
+	static void AvgOfLevel(Node root) {
+		Queue<Node> q = new LinkedList<>();
+		q.add(root);
+
+		while (!q.isEmpty()) {
+			int k = q.size();
+			int sum = 0;
+			int N = k;
+			while (k > 0) {
+				Node front = q.poll();
+				sum += front.key;
+				// Adding valid left child
+				if (front.left != null) {
+					q.add(front.left);
+				}
+				// Adding valid right child
+				if (front.right != null) {
+					q.add(front.right);
+				}
+				k--;
+			}
+			System.out.print((float) sum / N);
 			System.out.println();
 		}
 	}
@@ -229,12 +268,14 @@ public class BinaryTree {
 		 * null null
 		 */
 
+		AvgOfLevel(root);
+		// LevelOrderTraversal(root);
 		// System.out.println(get_count(root));
 		// print_leafNodes(root);
 		// levelTraversal(root);
 		// PrintKthLevel(root, 2);
 		// LevelOrderTraversal(root);
-		LeftViewOfTree(root);
+		// LeftViewOfTree(root);
 		// leftView(root,0);
 		// preorder(root);
 		// System.out.println();

@@ -66,12 +66,18 @@ parent = floor((i-1)/2)
 6. Depth of  a tree.
 7. Printing all leaves of tree / print non-leaves of a tree
 8. PrintKthLevel
-9. Level order traversal (Recursive + Iterative)
-10.  https://leetcode.com/problems/path-sum/
+
+
+**Practice Problems on Binary Trees**
+9.  https://leetcode.com/problems/path-sum/
+10. Level order traversal (Recursive + Iterative)
+11. Left view of a tree [Recursive + Iterative]
+12. Right view of a tree [Recursive + Iterative] [x]
+13. Pre-order Iterative.
+14. In-order Iterative.
+15. Post-order Iterative.
+
 10. https://leetcode.com/problems/average-of-levels-in-binary-tree/
 11. https://leetcode.com/problems/leaf-similar-trees/
-12. Print left nodes only (Recursive + Iterative)
-13. Print right nodes only.(Recursive + Iterative)
-
 
 
