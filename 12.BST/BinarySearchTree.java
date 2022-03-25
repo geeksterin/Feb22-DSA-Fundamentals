@@ -46,19 +46,6 @@ public class BinarySearchTree {
         _inorder(root.right);
     }
 
-    void KthSmallest(TreeNode root, int k) {
-        // left to right inorder traversal.
-        if (root == null)
-            return;
-        KthSmallest(root.left, k);
-        k--;
-        if (k == 0) {
-            ans = root.val;
-            return;
-        }
-        KthSmallest(root.right, k);
-    }
-
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
 
@@ -79,6 +66,7 @@ public class BinarySearchTree {
         tree.insert(80);
 
         tree.inorder();
+     
 
         // https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/?ref=lbp
     }

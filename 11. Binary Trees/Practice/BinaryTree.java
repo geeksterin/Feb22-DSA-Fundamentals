@@ -21,6 +21,7 @@ public class BinaryTree {
         ArrayList<Integer> ans = new ArrayList<Integer>();
         
         while (true) {
+            // To traverse the left sub-tree till it goes to null
             while (root != null) {
                 ans.add(root.key); // processing.
                 stk.push(root);
@@ -59,13 +60,11 @@ public class BinaryTree {
         // Create two stacks
         s1 = new Stack<>();
         s2 = new Stack<>();
-
         if (root == null)
             return;
 
         // push root to first stack
         s1.push(root);
-
         // Run while first stack is not empty
         while (!s1.isEmpty()) {
             // Pop an item from s1 and push it to s2
@@ -79,7 +78,6 @@ public class BinaryTree {
             if (temp.right != null)
                 s1.push(temp.right);
         }
-
         // Print all elements of second stack
         while (!s2.isEmpty()) {
             Node temp = s2.pop();
