@@ -53,14 +53,14 @@ class BinarySearchTree {
 
             // node with two children: Get the inorder
             // successor (smallest in the right subtree)
-            root.key = minValue(root.right);
+            root.key = getInorderSuccessor(root.right);
             // Delete the inorder successor
             root.right = deleteRec(root.right, root.key);
         }
         return root;
     }
 
-    int minValue(Node root) {
+    int getInorderSuccessor(Node root) {
         int minv = root.key;
         while (root.left != null) {
             minv = root.left.key;
@@ -112,23 +112,23 @@ class BinarySearchTree {
         }
     }
 
-    public int rangeSumBST(TreeNode root, int L, int R) {
-        if (root == null) {
-            return 0;
-        }
-        int sum = 0;
-        // left child is a possible candidate.
-        if (root.val > L) {
-            sum += rangeSumBST(root.left, L, R);
-        }
-        if (root.val < R) {
-            sum += rangeSumBST(root.right, L, R);
-        } // right child is a possible candidate.
-        if (root.val >= L && root.val <= R) {
-            sum += root.val;
-        } // count root in.
-        return sum;
-    }
+    // public int rangeSumBST(Node root, int L, int R) {
+    // if (root == null) {
+    // return 0;
+    // }
+    // int sum = 0;
+    // // left child is a possible candidate.
+    // if (root.val > L) {
+    // sum += rangeSumBST(root.left, L, R);
+    // }
+    // if (root.val < R) {
+    // sum += rangeSumBST(root.right, L, R);
+    // } // right child is a possible candidate.
+    // if (root.val >= L && root.val <= R) {
+    // sum += root.val;
+    // } // count root in.
+    // return sum;
+    // }
 
     // Driver Code
     public static void main(String[] args) {

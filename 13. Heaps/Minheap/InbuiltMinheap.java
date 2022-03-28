@@ -8,13 +8,14 @@ class InbuiltMinheap {
     // Main driver method
     public static void main(String args[]) {
 
-        // Creating empty priority queue
+        // Creating empty priority queue: it's a min-heap.
         PriorityQueue<Integer> pQueue = new PriorityQueue<Integer>();
 
         // Adding items to the priority queue
         // using add() method
-        pQueue.add(10);
         pQueue.add(30);
+        pQueue.add(10);
+       
         pQueue.add(20);
         pQueue.add(400);
 

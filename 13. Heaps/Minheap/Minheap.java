@@ -16,7 +16,6 @@ class Minheap {
         this.size = 0;
 
         Heap = new int[this.maxsize + 1];
-        Heap[0] = Integer.MIN_VALUE;
     }
 
     // Method 1
@@ -24,14 +23,14 @@ class Minheap {
     // the parent for the node currently
     // at pos
     private int parent(int pos) {
-        return pos / 2;
+        return (pos / 2) - 1;
     }
 
     // Method 2
     // Returning the position of the
     // left child for the node currently at pos
     private int leftChild(int pos) {
-        return (2 * pos);
+        return (2 * pos) + 1;
     }
 
     // Method 3
@@ -39,7 +38,7 @@ class Minheap {
     // the right child for the node currently
     // at pos
     private int rightChild(int pos) {
-        return (2 * pos) + 1;
+        return (2 * pos) + 2;
     }
 
     // Method 4: Returning true if the passed node is a leaf node
@@ -66,7 +65,6 @@ class Minheap {
     // Method 6
     // To heapify the node at pos
     private void minHeapify(int pos) {
-
         // If the node is a non-leaf node and greater
         // than any of its child
         if (!isLeaf(pos)) {
@@ -101,6 +99,9 @@ class Minheap {
         Heap[++size] = element;
         int current = size;
 
+        if (current == 1) {
+            return;
+        }
         while (Heap[current] < Heap[parent(current)]) {
             swap(current, parent(current));
             current = parent(current);
@@ -110,13 +111,13 @@ class Minheap {
     // Method 8
     // To print the contents of the heap
     public void print() {
-        for (int i = 1; i <= size / 2; i++) {
+        for (int i = 0; i <= size / 2; i++) {
 
             // Printing the parent and both childrens
             System.out.print(
                     " PARENT : " + Heap[i]
-                            + " LEFT CHILD : " + Heap[2 * i]
-                            + " RIGHT CHILD :" + Heap[2 * i + 1]);
+                            + " LEFT CHILD : " + Heap[2 * i + 1]
+                            + " RIGHT CHILD :" + Heap[2 * i + 2]);
 
             // By here new line is required
             System.out.println();

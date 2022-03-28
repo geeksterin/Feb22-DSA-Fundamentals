@@ -5,7 +5,7 @@
 ----------------------------------------------------------------------------------------------
 1. Insertion -> WC: O(N) , BC : O(lgN).
 2. Search    -> WC: O(N) , BC : O(lgN).
-3. Deletion  -> WC: O(N)
+3. Deletion  -> WC: O(N) , BC : O(lgN).
 
 ## Operations on BST:
 ----------------------------------------------------------------------------------------------
@@ -19,8 +19,6 @@
    - how to find it.
 6. Deletion in BST : https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/?ref=lbp
 7. https://leetcode.com/problems/validate-binary-search-tree/discuss/32112/Learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-(Java-Solution) 
-
-
 
 
 ### Problems on BST
