@@ -6,7 +6,7 @@ class Minheap {
     private int maxsize;
 
     // Initializing front as static with unity
-    private static final int FRONT = 1;
+    private static final int FRONT = 0;
 
     // Constructor of this class
     public Minheap(int maxsize) {
@@ -23,7 +23,10 @@ class Minheap {
     // the parent for the node currently
     // at pos
     private int parent(int pos) {
-        return (pos / 2) - 1;
+        if (pos == 0) {
+            return 0;
+        }
+        return (pos - 1) / 2;
     }
 
     // Method 2
@@ -64,7 +67,7 @@ class Minheap {
 
     // Method 6
     // To heapify the node at pos
-    private void minHeapify(int pos) {
+    private void heapify_down(int pos) {
         // If the node is a non-leaf node and greater
         // than any of its child
         if (!isLeaf(pos)) {
@@ -75,14 +78,14 @@ class Minheap {
                 // the left child
                 if (Heap[leftChild(pos)] < Heap[rightChild(pos)]) {
                     swap(pos, leftChild(pos));
-                    minHeapify(leftChild(pos));
+                    heapify_down(leftChild(pos));
                 }
 
                 // Swap with the right child and heapify
                 // the right child
                 else {
                     swap(pos, rightChild(pos));
-                    minHeapify(rightChild(pos));
+                    heapify_down(rightChild(pos));
                 }
             }
         }
@@ -99,9 +102,7 @@ class Minheap {
         Heap[++size] = element;
         int current = size;
 
-        if (current == 1) {
-            return;
-        }
+        // heapify-up
         while (Heap[current] < Heap[parent(current)]) {
             swap(current, parent(current));
             current = parent(current);
@@ -131,7 +132,7 @@ class Minheap {
 
         int popped = Heap[FRONT];
         Heap[FRONT] = Heap[size--];
-        minHeapify(FRONT);
+        heapify_down(FRONT);
 
         return popped;
     }
@@ -144,7 +145,7 @@ class Minheap {
         System.out.println("The Min Heap is ");
 
         // Creating object opf class in main() methodn
-        Minheap minHeap = new Minheap(15);
+        Minheap minHeap = new Minheap(10);
 
         // Inserting element to minHeap
         // using insert() method
