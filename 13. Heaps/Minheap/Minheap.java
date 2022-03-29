@@ -1,4 +1,4 @@
-class Minheap {
+public class Minheap {
 
     // Member variables of this class
     private int[] Heap;
@@ -96,7 +96,7 @@ class Minheap {
     public void insert(int element) {
 
         if (size >= maxsize) {
-            return;
+            System.out.println("Heap is full!!!");
         }
 
         Heap[++size] = element;

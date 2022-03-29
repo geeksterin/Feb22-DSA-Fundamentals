@@ -27,7 +27,8 @@ Reference for Heap Collection: https://www.geeksforgeeks.org/priority-queue-clas
 **Time Complexity of heaps**
 ----------------------------------------------------------------------------------------------
 - Insertion: O(lgN)
-- Deletion: O(lgN)
+- Deletion: O(N)
+- Deletion of min/max node: O(lgN)
 - GetMin/GetMax : O(1)
 - Searching : O(N)
 
@@ -35,12 +36,7 @@ Reference for Heap Collection: https://www.geeksforgeeks.org/priority-queue-clas
 1. https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/ 
 2. https://leetcode.com/problems/kth-largest-element-in-an-array/ 
 3. https://leetcode.com/problems/top-k-frequent-elements/ 
-4. https://leetcode.com/problems/top-k-frequent-words/ 
-***Asked In: Microsoft, Adobe:***
-5. https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/ [x]
-6. https://leetcode.com/problems/merge-k-sorted-lists/ 
-7. https://leetcode.com/problems/find-median-from-data-stream/ 
-8. https://www.geeksforgeeks.org/implement-stack-using-priority-queue-or-heap/
+
 
 
 Additional Resources to learn:
