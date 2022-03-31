@@ -41,4 +41,7 @@
 - https://leetcode.com/problems/valid-anagram/ 
 - https://leetcode.com/problems/group-anagrams/ 
 - https://leetcode.com/problems/unique-number-of-occurrences
-- https://leetcode.com/problems/two-sum/
+- https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/ 
+- https://leetcode.com/problems/two-sum/ [x]
+- https://leetcode.com/problems/two-sum-iv-input-is-a-bst/ [x]
+- https://leetcode.com/problems/top-k-frequent-elements/ 
